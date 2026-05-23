@@ -1688,6 +1688,7 @@ cite {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+    z-index: 1 !important;
   }
 
   .mobile-hero-photo img {
@@ -1700,6 +1701,9 @@ cite {
   /* 4. CTA — по центру, удобная под палец */
   .hero-actions {
     justify-content: center;
+    position: relative !important;
+    z-index: 9999 !important;
+    pointer-events: auto !important;
   }
 
   .hero-actions .button {
@@ -1708,6 +1712,10 @@ cite {
     height: 54px;
     min-height: 54px;
     border-radius: 50px;
+    position: relative !important;
+    z-index: 10000 !important;
+    cursor: pointer;
+    touch-action: manipulation;
   }
 
   /* 5. Proof row — по центру */
