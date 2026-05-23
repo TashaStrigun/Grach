@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Студия эпиляции Марии Грач в Перми - лазер, электроэпиляция, депиляция</title>
+    <meta name="description" content="Студия честной эпиляции в Парковом районе Перми. Лазерная эпиляция, электроэпиляция, шугаринг, воск, косметология. Онлайн-запись 24/7 через Dikidi.">
+    <meta name="theme-color" content="#f8f3f4">
+    <meta property="og:title" content="Студия эпиляции Марии Грач">
+    <meta property="og:description" content="Честная эпиляция в Парковом районе Перми: подберем метод, который подойдет именно вам.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/hero.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Студия эпиляции Марии Грач",
+        "description": "Студия эпиляции в Парковом районе Перми: лазерная эпиляция, электроэпиляция, шугаринг, воск, косметология и уход за телом.",
+        "image": "assets/img/hero.jpg",
+        "telephone": "+7 963 017-17-69",
+        "url": "https://dikidi.net/980738",
+        "priceRange": "500-9900 RUB",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Пермь",
+          "streetAddress": "Парковый, 1/1, 2 этаж, 2 кабинет",
+          "addressCountry": "RU"
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "09:00",
+          "closes": "21:00"
+        }],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "216",
+          "ratingCount": "516"
+        },
+        "sameAs": [
+          "https://vk.com/timebeautyperm",
+          "https://dikidi.net/980738"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Студия эпиляции Марии Грач">
+        <span class="brand-mark">MG</span>
+        <span>Мария Грач</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#methods">Методы</a>
+        <a href="#masters">Мастера</a>
+        <a href="#price">Прайс</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions" aria-label="Быстрые действия">
+        <a class="header-phone" href="tel:+79630171769">+7 (963) 017-17-69</a>
+        <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+    <nav class="nav-drawer" id="navDrawer" aria-label="Мобильное меню">
+      <button class="nav-drawer-close" id="drawerClose" aria-label="Закрыть меню">&#x2715;</button>
+      <div class="nav-drawer-links">
+        <a href="#methods" data-drawer-link>Методы</a>
+        <a href="#masters" data-drawer-link>Мастера</a>
+        <a href="#price" data-drawer-link>Прайс</a>
+        <a href="#contacts" data-drawer-link>Контакты</a>
+      </div>
+      <a class="nav-drawer-phone" href="tel:+79630171769">+7 (963) 017-17-69</a>
+      <a class="nav-drawer-cta" href="#guide">Подобрать лучший метод</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <!-- мобильное фото — прямой дочерний элемент flex-контейнера,
+               order:-1 работает корректно и показывает его первым -->
+          <div class="mobile-hero-photo">
+            <img src="assets/img/hero-mobile.jpg" alt="Мария Грач и Екатерина Климовских в студии эпиляции в Парковом районе Перми">
+          </div>
+          <div class="hero-text-container">
+            <p class="eyebrow hero-kicker">Пермь • Парковый район</p>
+            <h1 id="hero-title" class="hero-title">
+              <span class="hero-title-main">Студия эпиляции</span>
+              <span class="hero-title-name">Марии Грач</span>
+            </h1>
+            <p class="hero-lead hero-subtitle desktop-lead">Подбираем метод под вашу кожу, волосы и&nbsp;чувствительность. Без лишних процедур и&nbsp;ложных обещаний.</p>
+            <p class="hero-lead mobile-lead">Подбираем метод под вашу кожу и&nbsp;чувствительность.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="#guide">Подобрать лучший метод</a>
+            </div>
+            <div class="proof-row" aria-label="Доказательства доверия">
+              <span><b>★ 5.0</b> на Dikidi</span>
+              <span><b>516</b> отзывов</span>
+              <span><b>8000+</b> процедур</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/img/hero.jpg" alt="Мария Грач и Екатерина Климовских в студии эпиляции в Парковом районе Перми">
+        </div>
+      </section>
+
+      <section class="intro section">
+        <div class="section-head">
+          <p class="eyebrow">Манифест студии</p>
+          <h2>Почему нам доверяют: 4 принципа честной эпиляции</h2>
+        </div>
+        <div class="honesty-grid">
+          <article>
+            <h3>Не продлеваем курс ради выгоды</h3>
+            <p>Мы не продаем бесконечные абонементы. Если лазер не подходит, честно предлагаем другой метод, а не продолжаем курс без результата.</p>
+          </article>
+          <article>
+            <h3>Комбинируем технологии</h3>
+            <p>Лазер, электроэпиляция и депиляция решают разные задачи. Мастер подбирает схему под цвет волос, кожу, зону и вашу цель.</p>
+          </article>
+          <article>
+            <h3>Работаем с кожей, а не только с волосом</h3>
+            <p>Помогаем при раздражении, вросших волосах и чувствительной коже. Подбираем домашний уход, который поддерживает результат после визита.</p>
+          </article>
+          <article>
+            <h3>Объясняем результат до процедуры</h3>
+            <p>Вы заранее понимаете, что будет происходить, сколько времени займет визит и какого эффекта ждать после первой процедуры.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section methods" id="methods">
+        <div class="section-head">
+          <p class="eyebrow">Направления и технологии</p>
+          <h2>Три метода под разные задачи кожи и волос</h2>
+        </div>
+        <div class="method-grid">
+          <article class="method-card service-direction-card method-laser">
+            <h3>Лазерная эпиляция</h3>
+            <img src="assets/img/studio-equipment.jpg" alt="Аппарат для лазерной эпиляции в студии Марии Грач" loading="lazy">
+            <div class="method-copy">
+              <p>Современный диодный лазер для комфортной работы с тёмными и русыми волосами. Мастер подбирает параметры под зону, чувствительность кожи и ваш предыдущий опыт эпиляции.</p>
+              <ul class="service-list">
+                <li class="service-list-item"><b>Заметный результат</b> и остановка роста волос уже после первого визита.</li>
+                <li class="service-list-item"><b>Лучший старт</b> для тёмных и русых волос на больших зонах.</li>
+              </ul>
+              <a class="service-link-action" href="#laser">Узнать стоимость и записаться →</a>
+            </div>
+          </article>
+          <article class="method-card service-direction-card method-electro">
+            <h3>Электроэпиляция</h3>
+            <img src="assets/img/electro.jpg" alt="Электроэпиляция в студии Марии Грач" loading="lazy">
+            <div class="method-copy">
+              <p>Единственный доказанный метод полного удаления волос навсегда. Безупречно работает с любым фототипом кожи, включая светлые, седые и жёсткие волосы.</p>
+              <ul class="service-list">
+                <li class="service-list-item"><b>Точная работа</b> с зонами, где лазер не дал нужного результата.</li>
+                <li class="service-list-item"><b>Подходит</b> для лица, гормонозависимых зон и единичных устойчивых волосков.</li>
+              </ul>
+              <a class="service-link-action" href="#electro">Узнать стоимость и записаться →</a>
+            </div>
+          </article>
+          <article class="method-card service-direction-card method-wax">
+            <h3>Воск и сахар</h3>
+            <img src="assets/img/wax-result.jpg" alt="Теплый воск для депиляции и шугаринга" loading="lazy">
+            <div class="method-copy">
+              <p>Мгновенная гладкость за один визит без ожидания курса. Хороший выбор перед отпуском, событием или когда нужен понятный результат на 3-4 недели.</p>
+              <ul class="service-list">
+                <li class="service-list-item"><b>Быстро и предсказуемо</b> для ног, рук, подмышек и бикини.</li>
+                <li class="service-list-item"><b>Деликатные техники</b> с уходом за кожей после процедуры.</li>
+              </ul>
+              <a class="service-link-action" href="#wax">Узнать стоимость и записаться →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+
+      <section class="section service">
+        <div class="section-head">
+          <p class="eyebrow">Гарантии сервиса</p>
+          <h2>Сервис, продуманный до мелочей</h2>
+        </div>
+        <div class="service-track" aria-label="Преимущества студии">
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">01</span>
+            <h3>Медицинский контроль</h3>
+            <p>Все мастера имеют профильное образование и регулярную переаттестацию. Строго соблюдаем нормы СанПиН.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">02</span>
+            <h3>Комфорт на Парковом</h3>
+            <p>Удобное расположение студии. Бесплатная свободная парковка для наших клиентов прямо у входа.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">03</span>
+            <h3>Забота после визита</h3>
+            <p>Бесплатно предоставляем рекомендации и персонально подбираем домашний уход для здоровья вашей кожи.</p>
+          </article>
+        </div>
+        <div class="service-dots" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section class="section masters" id="masters">
+        <div class="section-head">
+          <p class="eyebrow">Команда</p>
+          <h2>Выберите мастера под свой запрос</h2>
+        </div>
+        <div class="master-grid">
+          <article class="master-card focus">
+            <span class="recommend-badge">Рекомендуем • ближайшие окна</span>
+            <img src="assets/img/ekaterina.jpg" alt="Екатерина Климовских, мастер депиляции и электроэпиляции" loading="lazy">
+            <div class="master-body">
+              <p class="master-role">Екатерина Климовских • мастер эпиляции</p>
+              <h3>Первый визит без лишнего стресса</h3>
+              <p>Специализируется на безболезненных техниках воска, лазера и сложной электроэпиляции. Создает расслабляющую атмосферу, где можно довериться процессу и отдохнуть в тишине.</p>
+              <div class="rating-line">Рейтинг 4.99 ★ 160 отзывов в Dikidi</div>
+              <a class="button primary" href="https://dikidi.net/980738">Записаться к Екатерине</a>
+            </div>
+          </article>
+          <article class="master-card">
+            <img src="assets/img/maria.jpg" alt="Мария Грач, основатель студии и топ-мастер" loading="lazy">
+            <div class="master-body">
+              <p class="master-role">Мария Грач • основатель студии / топ-мастер</p>
+              <h3>Эксперт по коже и телу</h3>
+              <p>Косметолог-эстетист с опытом более 18 лет. Подбирает долгосрочные программы ухода и комбинированные методы эпиляции.</p>
+              <div class="rating-line">Рейтинг 5.0 ★ 346 оценок в Dikidi</div>
+              <a class="button secondary" href="https://dikidi.net/980738">Выбрать Марию</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section results">
+        <div class="section-head">
+          <p class="eyebrow">Результаты</p>
+          <h2>Атмосфера и результаты нашей работы</h2>
+        </div>
+        <div class="result-grid carousel" aria-label="Галерея результатов и атмосферы">
+          <figure>
+            <img src="assets/img/laser-result.jpg" alt="Результат 1 после процедуры эпиляции в студии Марии Грач" loading="lazy">
+            <figcaption>Деликатный воск: гладкость и уход за кожей сразу после процедуры.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/legs-result.jpg" alt="Результат 2 после процедуры эпиляции в студии Марии Грач" loading="lazy">
+            <figcaption>Аппаратные методики: индивидуальный подбор параметров для чистой кожи без вросших волос.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/care.jpg" alt="Профессиональная косметика премиум-класса для ухода после процедур" loading="lazy">
+            <figcaption>Профессиональный уход: используем сертифицированную косметику и понятные домашние рекомендации.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+
+      <section class="slots">
+        <div>
+          <p class="eyebrow">Ближайшие окна</p>
+          <h2>У Екатерины есть время на этой неделе</h2>
+          <p>Точные свободные слоты смотрите в Dikidi. Ниже - быстрые сценарии записи для тех, кто хочет решить вопрос без переписки.</p>
+        </div>
+        <div class="slot-grid">
+          <a href="https://dikidi.net/980738"><span>Пробная электроэпиляция</span><b>40 минут</b></a>
+          <a href="https://dikidi.net/980738"><span>Глубокое бикини + подмышки</span><b>от 30 минут</b></a>
+          <a href="https://dikidi.net/980738"><span>Лазерное комбо</span><b>от 3100 ₽</b></a>
+        </div>
+      </section>
+
+      <section class="section price" id="price">
+        <div class="section-head">
+          <p class="eyebrow">Прозрачный прайс</p>
+          <h2>Цены и длительность процедур</h2>
+          <p>Здесь собраны основные цены на лазерную эпиляцию, электроэпиляцию, шугаринг и воск в студии на Парковом. Финальную схему мастер подберет по типу волос, зоне и чувствительности кожи.</p>
+        </div>
+
+        <div class="accordion">
+          <details open id="wax">
+            <summary><span>Депиляция: сахар и воск — женщины</span><small>Глубокое бикини от 1650 ₽</small></summary>
+            <div class="price-list">
+              <div><span>Зона лица</span><b>500 ₽ / 10 мин</b><a href="https://dikidi.net/980738">Запись</a></div>
+              <div><span>Подмышечные впадины</span><b>700 ₽ / 10 мин</b><a href="https://dikidi.net/980738">Запись</a></div>
+              <div><span>Бикини классика</span><b>1200 ₽ / 15 мин</b><a href="https://dikidi.net/980738">Запись</a></div>
+              <div><span>Глубокое бикини шугаринг/воск</span><b>от 1650 ₽ / 30 мин</b><a href="https://dikidi.net/980738">Запись</a></div>
+              <div><span>Голени</span><b>от 1000 ₽ / 15 мин</b><a href="https://dikidi.net/980738">Запись</a></div>
+              <div><span>Бедра</span><b>от 1100 ₽ / 30 мин</b><a href="https://dikidi.net/980738">Запись</a></div>
+              <div><span>Ноги полностью</span><b>от 1600 ₽ / 30 мин</b><a href="https://dikidi.net/980738">Запись</a></div>
+              <div><span>Руки до локтя</span><b>от 800 ₽ / 15 мин</b><a href="https://dikidi.net/980738">Запись</a></div>
+              <div><span>Руки полностью</span><b>от 1200 ₽ / 20 мин</b><a href="https://dikidi.net/980738">Запись</a></div>
+              <div><span>Комбо: глубокое бикини + подмышки</span><b>от 2200 ₽ / 30 мин</b><a href="https://dikidi.net/980738">Запись</a></div>
+              <div><span>Комбо: глубокое бикини + подмышки + голени</span><b>от 2800 ₽ / 40 мин</b><a href="https://dikidi.net/980738">Запись</a></div>
+              <div><span>Комбо: глубокое бикини + подмышки + ноги полностью</span><b>от 3000 ₽ / 55 мин</b><a href="https://dikidi.net/980738">Запись</a></div>
+            </div>
+          </details>
+
+          <details id="laser">
+            <summary><span>Лазерная эпиляция</span><small>Выгодные комбо от 3100 ₽</small></summary>
+            <div class="price-list">
+              <div><span>Подмышки</span><b>1200 ₽ / 10 мин</b></div>
+              <div><span>Бикини классическое</span><b>1550 ₽ / 15 мин</b></div>
+              <div><span>Глубокое бикини</span><b>от 2700 ₽ / 30 мин</b></div>
+              <div><span>Голени с коленями</span><b>от 2300 ₽ / 30 мин</b></div>
+              <div><span>Ноги полностью</span><b>3500 ₽ / 50 мин</b></div>
+              <div><span>Руки полностью</span><b>2500 ₽ / 40 мин</b></div>
+              <div><span>Комбо 1: глубокое бикини + подмышки</span><b>от 3100 ₽ / 30 мин</b></div>
+              <div><span>Комбо 4: глубокое бикини + подмышки + голени</span><b>от 5200 ₽ / 60 мин</b></div>
+              <div><span>Комбо 5: глубокое бикини + подмышки + ноги полностью</span><b>6300 ₽ / 90 мин</b></div>
+              <div><span>Комбо 6: все включено, любые зоны</span><b>9900 ₽ / 120 мин</b></div>
+            </div>
+          </details>
+
+          <details id="electro">
+            <summary><span>Электроэпиляция</span><small>Удаление волос навсегда от 40 ₽/мин</small></summary>
+            <div class="price-list">
+              <div><span>Электроэпиляция тела</span><b>от 40 ₽ / мин</b></div>
+              <div><span>Электроэпиляция лица</span><b>от 50 ₽ / мин</b></div>
+              <div><span>Пробная процедура 20 минут</span><b>850 ₽</b></div>
+              <div><span>Пробная процедура 40 минут</span><b>1450 ₽</b></div>
+            </div>
+          </details>
+
+          <details>
+            <summary><span>Косметология, уход и прессотерапия</span><small>Чистка и пилинги от 2300 ₽</small></summary>
+            <div class="price-list">
+              <div><span>Ультразвуковая чистка</span><b>от 2300 ₽ / 90 мин</b></div>
+              <div><span>Пилинг</span><b>от 2300 ₽ / 50 мин</b></div>
+              <div><span>Массаж лица</span><b>2300 ₽ / 50 мин</b></div>
+              <div><span>Карбокситерапия</span><b>3200 ₽ / 60 мин</b></div>
+              <div><span>Прессотерапия</span><b>900 ₽ / 40 мин</b></div>
+              <div><span>Прессотерапия с обертыванием</span><b>1300 ₽ / 60 мин</b></div>
+            </div>
+          </details>
+        </div>
+        <p class="price-note">Цены открыты до записи. Если услуга зависит от зоны или длительности, мастер заранее объяснит расчет и подберет формат без скрытых доплат.</p>
+      </section>
+
+      <!-- ── Интеллектуальный квиз ── -->
+      <section class="qr-section section" id="guide">
+        <div class="qr-wrap">
+
+          <div class="qr-progress" id="qrProgress">
+            <div class="qr-progress-fill" id="qrFill"></div>
+          </div>
+
+          <!-- Шаг 0: Старт -->
+          <div class="qr-step qr-active" id="qr-0">
+            <div class="qr-start-inner">
+              <p class="eyebrow">Для первого визита в студию</p>
+              <h2 class="qr-title">Интеллектуальный подбор метода гладкости</h2>
+              <p class="qr-lead">Если вы у нас впервые, пройдите короткий тест за 1 минуту: мы учтём цвет волос, прошлый опыт и вашу цель, чтобы подсказать, с какого метода лучше начать — лазера, электроэпиляции или воска.</p>
+              <button class="button primary qr-btn-start">Начать цифровую консультацию</button>
+            </div>
+          </div>
+
+          <!-- Шаг 1: Цвет волос -->
+          <div class="qr-step" id="qr-1">
+            <p class="qr-q-label">Вопрос 1 из 3</p>
+            <h3 class="qr-q-text">Каков ваш естественный цвет волос в зоне, которую вы хотите обработать?</h3>
+            <div class="qr-options" data-step="1">
+              <button class="qr-option" data-value="dark">
+                <span class="qr-dot" style="background:#2E1C0E"></span>Тёмные / жёсткие
+              </button>
+              <button class="qr-option" data-value="medium">
+                <span class="qr-dot" style="background:#9E7352"></span>Русые / шатен
+              </button>
+              <button class="qr-option" data-value="light">
+                <span class="qr-dot" style="background:#D9C5A8;border:1px solid rgba(70,60,50,.2)"></span>Светлые / рыжие / седые
+              </button>
+            </div>
+          </div>
+
+          <!-- Шаг 2: Опыт и сложности -->
+          <div class="qr-step" id="qr-2">
+            <p class="qr-q-label">Вопрос 2 из 3</p>
+            <h3 class="qr-q-text">Что сейчас больше всего мешает прийти к гладкой коже?</h3>
+            <div class="qr-options" data-step="2">
+              <button class="qr-option" data-value="irritation">Раздражение, покраснение и зуд кожи на следующий день</button>
+              <button class="qr-option" data-value="ingrown">Вросшие волосы и тёмные точки</button>
+              <button class="qr-option" data-value="fast">Волосы растут слишком быстро — эффект «ёжика» уже к вечеру</button>
+              <button class="qr-option" data-value="laser_failed">Уже был опыт лазера, но заметного результата не было</button>
+              <button class="qr-option" data-value="none">Особых проблем нет, ищу долгосрочный результат</button>
+            </div>
+          </div>
+
+          <!-- Шаг 3: Цель -->
+          <div class="qr-step" id="qr-3">
+            <p class="qr-q-label">Вопрос 3 из 3</p>
+            <h3 class="qr-q-text">Какой результат для вас в приоритете?</h3>
+            <div class="qr-options" data-step="3">
+              <button class="qr-option" data-value="permanent">Удалить волосы навсегда, даже если нужен системный курс</button>
+              <button class="qr-option" data-value="quick">Идеальная гладкость за один визит без долгого ожидания</button>
+              <button class="qr-option" data-value="trial">Хочу попробовать и оценить комфорт на чувствительной зоне</button>
+            </div>
+          </div>
+
+          <!-- Шаг 4: Загрузка -->
+          <div class="qr-step" id="qr-4">
+            <div class="qr-loading">
+              <div class="qr-loader-track">
+                <div class="qr-loader-fill" id="qrLoaderFill"></div>
+              </div>
+              <p class="qr-loading-text" id="qrLoadingText">Анализируем ваш фототип…</p>
+            </div>
+          </div>
+
+          <!-- Шаг 5: Результат + форма -->
+          <div class="qr-step" id="qr-5">
+            <div class="qr-result-inner">
+              <div class="qr-badge" id="qrBadge">
+                <p class="qr-badge-label">Рекомендованный метод</p>
+                <p class="qr-badge-method" id="qrMethod">Лазерная эпиляция</p>
+                <p class="qr-badge-reason" id="qrReason"></p>
+                <div class="qr-offer" id="qrOffer"></div>
+              </div>
+              <h2 class="qr-title">Ваша персональная рекомендация готова</h2>
+              <p class="qr-lead">Можно сразу выбрать удобное время онлайн или оставить номер: Екатерина подскажет, с какого метода лучше начать именно в вашей ситуации.</p>
+              <div class="qr-actions">
+                <a class="button primary qr-online" href="https://dikidi.net/980738">Записаться онлайн</a>
+                <a class="button secondary qr-consult-link" href="#consultation">Получить консультацию</a>
+              </div>
+              <p class="qr-fineprint">Скидка по результату квиза действует только для новых клиентов студии и применяется при записи к Екатерине.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section reviews">
+        <div class="section-head">
+          <p class="eyebrow">Отзывы</p>
+          <h2>Клиенты отмечают деликатность и результат</h2>
+        </div>
+        <div class="review-grid">
+          <blockquote>
+            <p>Лучший мастер депиляции, у которого я была. Екатерина делает все быстро, аккуратно и очень бережно.</p>
+            <cite>Отзыв на Dikidi</cite>
+          </blockquote>
+          <blockquote>
+            <p>Сделал 5 процедур лазерной эпиляции, волос уже почти нет. Здорово. Благодарю мастеров этой студии.</p>
+            <cite>Отзыв на Dikidi</cite>
+          </blockquote>
+          <blockquote>
+            <p>Профессиональный и приветливый мастер. Услуга выполнена в уютной и комфортной атмосфере.</p>
+            <cite>Отзыв на Dikidi</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section consultation-section" id="consultation">
+        <div class="consultation-copy">
+          <p class="eyebrow">Личная консультация</p>
+          <h2>Все еще сомневаетесь?</h2>
+          <p>С удовольствием проконсультируем: оставьте номер, и наш мастер поможет выбрать комфортный первый шаг — без навязывания курса и лишних процедур.</p>
+        </div>
+        <form class="consultation-form" id="consultationForm">
+          <input class="qr-input" type="text" placeholder="Ваше имя" name="name" required>
+          <input class="qr-input" type="tel" placeholder="+7 (___) ___-__-__" name="phone" id="consultationPhone" required>
+          <label class="qr-consent">
+            <input type="checkbox" name="consent" required>
+            <span>Согласна на обработку персональных данных и обратный звонок по заявке.</span>
+          </label>
+          <button type="submit" class="button primary consultation-submit">Получить консультацию</button>
+        </form>
+      </section>
+
+      <section class="section contacts" id="contacts">
+        <div>
+          <p class="eyebrow">Как нас найти</p>
+          <h2>Парковый, 1/1, 2 этаж, 2 кабинет</h2>
+          <p>Студия находится в Парковом районе Перми. Есть парковка. Онлайн-запись работает круглосуточно, процедуры проходят ежедневно с 09:00 до 21:00.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="https://dikidi.net/980738">Выбрать удобное время</a>
+          <a class="button secondary" href="https://wa.me/79630171769">Написать в WhatsApp</a>
+          <a class="button secondary" href="https://vk.com/timebeautyperm">Группа ВКонтакте</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Студия эпиляции Марии Грач</span>
+      <span>Пермь, Парковый, 1/1</span>
+      <a href="tel:+79630171769">+7 (963) 017-17-69</a>
+    </footer>
+
+    <div class="mobile-bar" aria-label="Быстрая запись">
+      <a href="https://dikidi.net/980738">Выбрать время (запись 24/7)</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
