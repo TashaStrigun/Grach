@@ -1588,6 +1588,10 @@ cite {
     height: 520px;
   }
 
+  .recommend-badge {
+    top: 460px;
+  }
+
   .contact-actions {
     justify-content: flex-start;
   }
