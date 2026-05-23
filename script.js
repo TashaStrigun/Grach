@@ -196,6 +196,7 @@ document.querySelectorAll(".qr-consult-link").forEach((link) => {
       if (btn) { btn.disabled = true; btn.textContent = "Отправляем…"; }
 
       try {
+        if (typeof ym !== "undefined") ym(109386062, 'reachGoal', 'consultation_submit');
         await fetch("/api/send-telegram", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -250,4 +251,18 @@ document.querySelectorAll(".qr-consult-link").forEach((link) => {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") close();
   });
+})();
+
+/* ── Yandex Metrika goals ─────────────────────── */
+(function () {
+  const ymGoal = (name) => { if (typeof ym !== "undefined") ym(109386062, 'reachGoal', name); };
+
+  // Кнопки записи на Dikidi
+  document.querySelectorAll('a[href*="dikidi.net"]').forEach((el) => {
+    el.addEventListener("click", () => ymGoal("book_online"));
+  });
+
+  // Нижняя кнопка "Онлайн запись"
+  const mobileBarLink = document.querySelector(".mobile-bar a");
+  if (mobileBarLink) mobileBarLink.addEventListener("click", () => ymGoal("mobile_bar_click"));
 })();
