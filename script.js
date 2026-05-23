@@ -176,10 +176,21 @@ document.querySelectorAll(".qr-consult-link").forEach((link) => {
 
   const form = document.getElementById("consultationForm");
   if (form) {
-    form.addEventListener("submit", function (event) {
+    form.addEventListener("submit", async function (event) {
       event.preventDefault();
       const name = this.name.value.trim();
       const phoneValue = this.phone.value.trim();
+      const btn = this.querySelector("button[type=submit]");
+      if (btn) { btn.disabled = true; btn.textContent = "Отправляем…"; }
+
+      try {
+        await fetch("/api/send-telegram", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, phone: phoneValue }),
+        });
+      } catch (_) {}
+
       this.innerHTML = `
         <div class="qr-success">
           <div class="qr-success-check">✓</div>
