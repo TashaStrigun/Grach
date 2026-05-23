@@ -148,6 +148,8 @@ document.querySelectorAll(".qr-consult-link").forEach((link) => {
     if (methodEl) methodEl.textContent = method;
     if (reasonEl) reasonEl.textContent = reason;
     if (offerEl) offerEl.textContent = offer;
+
+    window.quizResult = { method, offer };
   }
 
 })();
@@ -187,7 +189,11 @@ document.querySelectorAll(".qr-consult-link").forEach((link) => {
         await fetch("/api/send-telegram", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, phone: phoneValue }),
+          body: JSON.stringify({
+            name,
+            phone: phoneValue,
+            quiz: window.quizResult || null,
+          }),
         });
       } catch (_) {}
 
