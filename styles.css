@@ -479,6 +479,61 @@ main > section {
   padding-inline: clamp(16px, 5vw, 72px);
 }
 
+/* ── Cookie banner ───────────────────────────── */
+.cookie-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px;
+  background: rgba(44, 38, 34, 0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  color: #fff;
+  font-size: 13px;
+  max-width: min(560px, calc(100vw - 32px));
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cookie-banner.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(16px);
+}
+
+.cookie-banner p {
+  margin: 0;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.cookie-banner a {
+  color: #e8a0b0;
+  text-decoration: underline;
+}
+
+.cookie-btn {
+  flex-shrink: 0;
+  padding: 8px 18px;
+  background: #B75A70;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cookie-btn:hover {
+  background: #A34862;
+}
+
 .section {
   padding-block: clamp(58px, 8vw, 104px);
 }

@@ -257,6 +257,21 @@ document.querySelectorAll(".qr-consult-link").forEach((link) => {
   });
 })();
 
+/* ── Cookie banner ───────────────────────────── */
+(function () {
+  const banner = document.getElementById("cookieBanner");
+  const btn = document.getElementById("cookieAccept");
+  if (!banner || !btn) return;
+  if (localStorage.getItem("cookie_ok")) {
+    banner.classList.add("is-hidden");
+    return;
+  }
+  btn.addEventListener("click", () => {
+    localStorage.setItem("cookie_ok", "1");
+    banner.classList.add("is-hidden");
+  });
+})();
+
 /* ── Yandex Metrika goals ─────────────────────── */
 (function () {
   const ymGoal = (name) => { if (typeof ym !== "undefined") ym(109386062, 'reachGoal', name); };
