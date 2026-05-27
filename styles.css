@@ -2829,3 +2829,67 @@ body {
     white-space: normal;
   }
 }
+
+/* ── Hero and master photo framing refinements ────────────────────── */
+@media (min-width: 1025px) {
+  .hero-photo {
+    width: 88%;
+  }
+
+  .hero-photo::before {
+    background: linear-gradient(90deg,
+      #F7F3EE 0%,
+      rgba(247, 243, 238, 0.96) 8%,
+      rgba(247, 243, 238, 0.76) 20%,
+      rgba(247, 243, 238, 0.34) 34%,
+      rgba(247, 243, 238, 0.08) 48%,
+      transparent 61%
+    );
+  }
+
+  .hero-photo img {
+    object-position: 51% 18%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-photo {
+    width: 86%;
+  }
+
+  .hero-photo img {
+    object-position: 48% 18%;
+  }
+}
+
+.recommend-badge {
+  top: auto;
+  bottom: 22px;
+  left: 22px;
+  max-width: calc(100% - 44px);
+}
+
+@media (max-width: 1100px) and (min-width: 769px) {
+  .recommend-badge {
+    top: 452px;
+    left: 18px;
+    transform: none;
+    max-width: calc(100% - 40px);
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .recommend-badge {
+    top: 452px;
+    bottom: auto;
+    left: 18px;
+    max-width: calc(100% - 36px);
+  }
+}
+
+@media (max-width: 600px) {
+  .recommend-badge {
+    top: 304px;
+  }
+}
