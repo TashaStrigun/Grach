@@ -2706,15 +2706,18 @@ body {
   }
 
   .cookie-banner {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
-    justify-items: stretch;
+    justify-items: initial;
+    padding: 8px 10px;
+    gap: 8px;
   }
 
   .cookie-btn {
-    min-width: 48px;
+    width: auto;
+    min-width: 64px;
     min-height: 34px;
-    padding-inline: 14px;
+    padding: 7px 14px;
   }
 }
 
@@ -2921,7 +2924,8 @@ body {
 
 @media (max-width: 1100px) and (min-width: 769px) {
   .recommend-badge {
-    top: 452px;
+    top: auto;
+    bottom: 22px;
     left: 18px;
     transform: none;
     max-width: calc(100% - 40px);
@@ -2931,8 +2935,8 @@ body {
 
 @media (max-width: 768px) {
   .recommend-badge {
-    top: 452px;
-    bottom: auto;
+    top: auto;
+    bottom: 22px;
     left: 18px;
     max-width: calc(100% - 36px);
   }
@@ -2940,6 +2944,6 @@ body {
 
 @media (max-width: 600px) {
   .recommend-badge {
-    top: 304px;
+    bottom: 22px;
   }
 }
