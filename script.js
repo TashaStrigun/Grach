@@ -201,7 +201,7 @@ document.querySelectorAll(".qr-consult-link").forEach((link) => {
 
       try {
         if (typeof ym !== "undefined") ym(109386062, 'reachGoal', 'consultation_submit');
-        await fetch("/api/send-telegram", {
+        const response = await fetch("/api/send-telegram.php", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -210,7 +210,19 @@ document.querySelectorAll(".qr-consult-link").forEach((link) => {
             quiz: window.quizResult || null,
           }),
         });
-      } catch (_) {}
+
+        const data = await response.json().catch(() => null);
+        if (!response.ok || !data?.ok) {
+          throw new Error(data?.error || "Не удалось отправить заявку");
+        }
+      } catch (_) {
+        if (btn) {
+          btn.disabled = false;
+          btn.textContent = "Получить консультацию";
+        }
+        alert("Не удалось отправить заявку. Пожалуйста, напишите нам в сообщения сообщества или попробуйте позже.");
+        return;
+      }
 
       this.innerHTML = `
         <div class="qr-success">
