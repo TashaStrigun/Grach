@@ -210,6 +210,10 @@ a {
   width: 78%;
   min-height: 100%;
   overflow: hidden;
+  background-image: url("assets/img/hero.jpg");
+  background-position: 34% 18%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-photo::before {
@@ -227,14 +231,6 @@ a {
     transparent 56%
   );
   pointer-events: none;
-}
-
-.hero-photo img {
-  width: 100%;
-  height: 100%;
-  min-height: min(860px, 100svh);
-  object-fit: cover;
-  object-position: 34% 18%;
 }
 
 .eyebrow {
@@ -2901,8 +2897,8 @@ body {
     );
   }
 
-  .hero-photo img {
-    object-position: 51% 18%;
+  .hero-photo {
+    background-position: 51% 18%;
   }
 }
 
@@ -2911,8 +2907,8 @@ body {
     width: 86%;
   }
 
-  .hero-photo img {
-    object-position: 48% 18%;
+  .hero-photo {
+    background-position: 48% 18%;
   }
 }
 

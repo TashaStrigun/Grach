@@ -12,6 +12,8 @@
     <meta property="og:url" content="https://www.grach-studio.ru/">
     <meta property="og:image" content="https://www.grach-studio.ru/assets/img/hero.jpg">
     <link rel="canonical" href="https://www.grach-studio.ru/">
+    <link rel="preload" as="image" href="assets/img/hero-mobile.jpg" media="(max-width: 768px)" fetchpriority="high">
+    <link rel="preload" as="image" href="assets/img/hero.jpg" media="(min-width: 769px)" fetchpriority="high">
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function(m,e,t,r,i,k,a){
@@ -175,7 +177,7 @@
           <!-- мобильное фото — прямой дочерний элемент flex-контейнера,
                order:-1 работает корректно и показывает его первым -->
           <div class="mobile-hero-photo">
-            <img src="assets/img/hero-mobile.jpg" alt="Мария Грач и Екатерина Климовских в студии эпиляции в Парковом районе Перми">
+            <img src="assets/img/hero-mobile.jpg" width="818" height="1024" alt="Мария Грач и Екатерина Климовских в студии эпиляции в Парковом районе Перми" decoding="async" fetchpriority="high">
           </div>
           <div class="hero-text-container">
             <p class="eyebrow hero-kicker">Пермь • Парковый район</p>
@@ -196,9 +198,7 @@
             </div>
           </div>
         </div>
-        <div class="hero-photo">
-          <img src="assets/img/hero.jpg" alt="Мария Грач и Екатерина Климовских в студии эпиляции в Парковом районе Перми">
-        </div>
+        <div class="hero-photo" role="img" aria-label="Мария Грач и Екатерина Климовских в студии эпиляции в Парковом районе Перми"></div>
       </section>
 
       <section class="intro section">
@@ -234,7 +234,7 @@
         <div class="method-grid">
           <article class="method-card service-direction-card method-laser">
             <h3>Лазерная эпиляция</h3>
-            <img src="assets/img/studio-equipment.jpg" alt="Аппарат для лазерной эпиляции в студии Марии Грач" loading="lazy">
+            <img src="assets/img/studio-equipment.jpg" width="745" height="1280" alt="Аппарат для лазерной эпиляции в студии Марии Грач" loading="lazy" decoding="async">
             <div class="method-copy">
               <p>Современный диодный лазер для комфортной работы с тёмными и русыми волосами. Мастер подбирает параметры под зону, чувствительность кожи и ваш предыдущий опыт эпиляции.</p>
               <ul class="service-list">
@@ -246,7 +246,7 @@
           </article>
           <article class="method-card service-direction-card method-electro">
             <h3>Электроэпиляция</h3>
-            <img src="assets/img/electro.jpg" alt="Электроэпиляция в студии Марии Грач" loading="lazy">
+            <img src="assets/img/electro.jpg" width="564" height="846" alt="Электроэпиляция в студии Марии Грач" loading="lazy" decoding="async">
             <div class="method-copy">
               <p>Единственный доказанный метод полного удаления волос навсегда. Безупречно работает с любым фототипом кожи, включая светлые, седые и жёсткие волосы.</p>
               <ul class="service-list">
@@ -258,7 +258,7 @@
           </article>
           <article class="method-card service-direction-card method-wax">
             <h3>Воск и сахар</h3>
-            <img src="assets/img/wax-result.jpg" alt="Теплый воск для депиляции и шугаринга" loading="lazy">
+            <img src="assets/img/wax-result.jpg" width="1350" height="1800" alt="Теплый воск для депиляции и шугаринга" loading="lazy" decoding="async">
             <div class="method-copy">
               <p>Мгновенная гладкость за один визит без ожидания курса. Хороший выбор перед отпуском, событием или когда нужен понятный результат на 3-4 недели.</p>
               <ul class="service-list">
@@ -310,7 +310,7 @@
         <div class="master-grid">
           <article class="master-card focus">
             <span class="recommend-badge">Рекомендуем • ближайшие окна</span>
-            <img src="assets/img/ekaterina.jpg" alt="Екатерина Климовских, мастер депиляции и электроэпиляции" loading="lazy">
+            <img src="assets/img/ekaterina.jpg" width="960" height="1280" alt="Екатерина Климовских, мастер депиляции и электроэпиляции" loading="lazy" decoding="async">
             <div class="master-body">
               <p class="master-role">Екатерина Климовских • мастер эпиляции</p>
               <h3>Первый визит без лишнего стресса</h3>
@@ -325,7 +325,7 @@
             </div>
           </article>
           <article class="master-card">
-            <img src="assets/img/maria.jpg" alt="Мария Грач, основатель студии и топ-мастер" loading="lazy">
+            <img src="assets/img/maria.jpg" width="960" height="1280" alt="Мария Грач, основатель студии и топ-мастер" loading="lazy" decoding="async">
             <div class="master-body">
               <p class="master-role">Мария Грач • основатель студии / топ-мастер</p>
               <h3>Эксперт по коже и телу</h3>
@@ -344,15 +344,15 @@
         </div>
         <div class="result-grid carousel" aria-label="Галерея результатов и атмосферы">
           <figure>
-            <img src="assets/img/laser-result.jpg" alt="Результат 1 после процедуры эпиляции в студии Марии Грач" loading="lazy">
+            <img src="assets/img/laser-result.jpg" width="960" height="1280" alt="Результат 1 после процедуры эпиляции в студии Марии Грач" loading="lazy" decoding="async">
             <figcaption>Деликатный воск: гладкость и уход за кожей сразу после процедуры.</figcaption>
           </figure>
           <figure>
-            <img src="assets/img/legs-result.jpg" alt="Результат 2 после процедуры эпиляции в студии Марии Грач" loading="lazy">
+            <img src="assets/img/legs-result.jpg" width="960" height="1280" alt="Результат 2 после процедуры эпиляции в студии Марии Грач" loading="lazy" decoding="async">
             <figcaption>Аппаратные методики: индивидуальный подбор параметров для чистой кожи без вросших волос.</figcaption>
           </figure>
           <figure>
-            <img src="assets/img/care.jpg" alt="Профессиональная косметика премиум-класса для ухода после процедур" loading="lazy">
+            <img src="assets/img/care.jpg" width="1350" height="1800" alt="Профессиональная косметика премиум-класса для ухода после процедур" loading="lazy" decoding="async">
             <figcaption>Профессиональный уход: используем сертифицированную косметику и понятные домашние рекомендации.</figcaption>
           </figure>
         </div>
